@@ -1,0 +1,13 @@
+ProjectName: examplePlugin
+ProjectVersion: 1.0.0
+PluginName: Example Plugin
+CompanyName: Omnicorum
+CompanyCopyright: (c) 2026
+CompanyWebsite: https://omnicorum.com/
+CompanyEmail: omnicorum@omnicorum.com
+
+ProcessorUID: 0xb4c1e2a7-8f3d4a9e-9c2d7b61-5e8a1f03
+ControllerUID: 0xd7a3f291-6b4c4e1a-ae9f2c58-7d0b4361
+
+VST3_SDK_Path: /Users/nicorusso/Development/VST3_SDK/
+
