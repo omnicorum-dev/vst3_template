@@ -1,18 +1,17 @@
 # VST3 Plugin Template
 
 A minimal code generator for a Steinberg VST3 plug-in. Fill in `config.txt`,
-run one script, and you get a ready-to-build CMake project (a processor, a
-controller, and a factory) with your plug-in's name, company info, and class
-IDs already wired in.
+run the python script, and you get a ready-to-build CMake project (a processor, a
+controller, and a factory) with everything filled in as needed.
 
 The generator itself (`build_template.py`) is plain Python and produces
 plain CMake + C++, so the generated project builds on macOS, Windows, and
 Linux. The steps below have been verified on macOS; the Windows and Linux
 steps follow Steinberg's own documented requirements for building against
-the VST3 SDK but haven't been tested against this template yet — see the
-per-platform notes for the parts most likely to need adjustment.
+the VST3 SDK but haven't been tested against this template yet (see
+per-platform notes for the parts most likely to need adjustment)
 
-## 1. Prerequisites
+## 1. Prereqs
 
 You need the VST3 SDK itself on every platform. Clone it (with submodules,
 even though this template disables the VSTGUI submodule at CMake configure
@@ -95,7 +94,7 @@ VST3_SDK_Path: /Users/nicorusso/Development/VST3_SDK/
   format).
 - `VST3_SDK_Path` is the absolute path to your local clone of the SDK from
   step 1, and **it's machine- and platform-specific** — set it separately
-  on each computer you build on. Use forward slashes even on Windows (for
+  on each computer you build on. Use forward slashes *even on Windows* (for
   example `C:/Dev/vst3sdk/`); CMake accepts them on all platforms, and it
   avoids backslash-escaping problems in the generated `CMakeLists.txt`.
 
@@ -119,7 +118,7 @@ cmake -GXcode ..
 cmake --build . --config Release
 ```
 
-(A Unix Makefiles or Ninja generator works too if you don't want an Xcode
+(A Unix Makefiles or Ninja generator works too if you don't want a gross Xcode
 project — `cmake -GNinja ..`.)
 
 ### Windows
