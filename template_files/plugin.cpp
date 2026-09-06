@@ -10,7 +10,7 @@ using namespace Steinberg::Vst;
 using namespace |NAMESPACENAME|;
 
 //------------------------------------------------------------------------
-BEGIN_FACTORY_DEF("|COMPANYNAME|", "|COMANYWEBSITE|", "|COMPANYEMAIL|")
+BEGIN_FACTORY_DEF("|COMPANYNAME|", "|COMPANYWEBSITE|", "|COMPANYEMAIL|")
 
 DEF_CLASS2(INLINE_UID_FROM_FUID(k|NAMESPACENAME|ProcessorUID),
            PClassInfo::kManyInstances, kVstAudioEffectClass, stringPluginName,
